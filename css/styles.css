@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@300&family=Kanit:wght@400&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Caveat", cursive;
+	/* font-family: "Kanit", sans-serif; */
+}
+
+h1 {
+	font-size: 5vmin;
+}
+
+p {
+	font-size: 2.5vmin;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background: url("../img/background.png");
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+	flex-direction: column;
+}
+
+#header {
+	width: 90vmin;
+	height: 7.5vmin;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#field {
+	width: 90vmin;
+	height: 85vmin;
+	background: url("../img/grass.png");
+	min-height: 90vmin;
+	background-size: auto 100vmin;
+	border: 2px solid rgb(1, 73, 0);
+	border-radius: 5px;
+	display: grid;
+	grid-template-columns: repeat(30, 1fr);
+	grid-template-rows: repeat(30, 1fr);
+}
+
+.scores {
+	display: flex;
+	flex-direction: column;
+}
+
+.head {
+	background: linear-gradient(rgb(0, 151, 0), rgb(0, 79, 0));
+	border: 0.25vmin solid rgb(53, 53, 53);
+	transform: scale(1.2);
+	border-radius: 8px;
+}
+
+.snake {
+	background: linear-gradient(rgb(0, 155, 0), rgb(0, 217, 0));
+	border: 0.25vmin solid rgb(50, 50, 50);
+	border-radius: 8px;
+}
+
+.food {
+	background: linear-gradient(rgb(185, 93, 0), rgb(255, 195, 14));
+	border-radius: 10px;
+	border: 0.15vmin solid rgb(168, 0, 0);
+}
